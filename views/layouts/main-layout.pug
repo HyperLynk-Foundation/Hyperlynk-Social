@@ -9,6 +9,17 @@ html(lang="en")
         link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.9/cropper.min.css')
         link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh', crossorigin='anonymous')
         link(rel="stylesheet", href="/css/main.css")
+        script.
+            (function () {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'https://app.termly.io/embed.min.js';
+            s.id = 'bdb9e574-8478-48af-885f-d872edde25b5';
+            s.setAttribute("data-name", "termly-embed-banner");
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+            })();
     body
         script.
             var userLoggedIn = !{userLoggedInJs};
