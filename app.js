@@ -56,6 +56,12 @@ app.use("/api/chats", chatsApiRoute);
 app.use("/api/messages", messagesApiRoute);
 app.use("/api/notifications", notificationsApiRoute);
 
+//requestReset routes
+const requestReset = require("./routes/requestReset")
+app.use("/requestReset", requestReset)
+     
+const passwordReset = require("./routes/passwordReset")
+app.use("/passwordReset", passwordReset)
 app.get("/", middleware.requireLogin, (req, res, next) => {
 
     var payload = {
