@@ -56,25 +56,25 @@
                 payload.statusMessage = "Something went wrong. Please try again."
                 return res.status(400).render("requestReset", payload)
             })
-     
-            var transporter = nodemailer.createTransport({
-                host: "smtp server",
-                port: //some port number,
+            
+            var transport = nodemailer.createTransport({
+                host: "smtp.mailtrap.io",
+                port: 2525,
                 auth: {
-                  user: "your mail username",
-                  pass: "your email password"
+                  user: "a71500cd492088",
+                  pass: "c9df868b786dff"
                 }
-            })
+            });
           
             var mailOptions = {
-                from: 'Twitter Clone',
+                from: 'Hyperlynk',
                 to: findEmail,
                 subject: 'Password change',
                 html: `You have requested a password change. 
                 <p>Please follow this link to change your password:</p>
-                <a href="http://localhost:3003/passwordReset?id=${uniqueId}">Click here</a>
+                <a href="https://hyperlynk.herokuapp.com/passwordReset?id=${uniqueId}">Click here</a>
                 <br><br>If you don't see the link, please copy and paste this line in your browser's address bar:
-                <p>http://localhost:3003/passwordReset?id=${uniqueId}</p>
+                <p>https://hyperlynk.herokuapp.com/passwordReset?id=${uniqueId}</p>
                 `
                 
             }
