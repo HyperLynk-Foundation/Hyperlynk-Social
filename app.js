@@ -62,6 +62,7 @@ app.use("/requestReset", requestReset)
      
 const passwordReset = require("./routes/passwordReset")
 app.use("/passwordReset", passwordReset)
+
 app.get("/", middleware.requireLogin, (req, res, next) => {
 
     var payload = {
