@@ -97,10 +97,9 @@ button span {
 
 .mainSectionContainer {
     padding:  0;
-    border-left: 1px solid var(--lightGrey);
-    border-right: 1px solid var(--lightGrey);
     display: flex;
     flex-direction: column;
+    background-color: transparent;
 }
 
 .titleContainer {
@@ -177,6 +176,11 @@ button span {
     flex-shrink: 0;
 }
 
+.post:hover {
+  background-color: #F2F2F2;
+  transition: 0.06s;
+}
+
 .mainContentContainer {
     flex: 1;
     display: flex;
@@ -205,12 +209,18 @@ button span {
 }
 
 .postFooter .postButtonContainer {
-    flex: 1;
+    flex: 0.09;
     display: flex;
+    border-radius: 5px;
+    border: 2px grey;
 }
 
 .postFooter .postButtonContainer button {
     padding: 2px 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 9px grey;
 }
 
 .header a:hover {
@@ -223,20 +233,23 @@ button span {
 }
 
 .postButtonContainer button:hover {
-    background-color: #d4edff;
-    color: var(--blue);
-    border-radius: 50%;
+   background-color: #31639e;
+   color: #d1d2d3;
+   border-radius: 10px;
 }
 
 .postButtonContainer.red button.active {
-    color: var(--red);
+  color: #d1d2d3;
+  background-color: #31639e;
+  border-radius: 10px;
     
 }
 
 .postButtonContainer.red button:hover {
-    color: var(--red);
-    background-color: var(--redBackground);
-    border-radius: 5px;
+  background-color: #31639e;
+  opacity: 75%;
+  border-radius: 10px;
+  color: #d1d2d3;
 }
 
 .postButtonContainer.green button.active {
@@ -807,7 +820,7 @@ button span {
     top: 0;
     right: 0;
     color: white;
-    font-size: 18px;
+    font-size: 13px;
     display: flex;
     align-items: center;
     justify-content: center;
