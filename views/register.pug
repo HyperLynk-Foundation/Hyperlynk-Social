@@ -3,8 +3,9 @@ extends layouts/login-layout.pug
 block content
     .loginContainer
             
+        img(src="https://i.ibb.co/GJ5cfnS/rfrffrds.png", alt="Hyperlynk Logo" width="260" style="margin-bottom: 5px; margin-top: 5px;")
 
-        h1 Register
+        h1(style="color:white;") Register
         form#registerForm(method="post", onsubmit="event.preventDefault(); validateForm();")
 
             p.errorMessage #{errorMessage}

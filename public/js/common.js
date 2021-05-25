@@ -489,7 +489,7 @@ function createPostHtml(postData, largeFont = false) {
                             </div>
                             <div class='postButtonContainer red'>
                                 <button class='likeButton ${likeButtonActiveClass}'>
-                                    <i class='far fa-heart'></i>
+                                    &#128077;
                                     <span>${postData.likes.length || ""}</span>
                                 </button>
                             </div>

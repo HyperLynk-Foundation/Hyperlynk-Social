@@ -1,53 +1,53 @@
 body {
     background-color: #fff;
-    background-image: url(https://lh3.googleusercontent.com/SdwKyaIiNl5ihXWyVXn7_CdTI0QOlcG5ODmOBfDE8RYiLD12w1XME9LELQEGQkFf1oLJYJ-7h8rqBGSAXP68q4-mtuB9OTKT3vj-rA=w0);
     background-position: center;
     background-repeat: no-repeat;
+    background-image: url("https://th.bing.com/th/id/R591dd39a78dfd0c089c2140b300cf5d0?rik=SsX%2fqPUv%2bYfJ%2bg&pid=ImgRaw");
     background-size: cover;
     background-attachment: fixed;
-}
-
-.wrapper {
+  }
+  
+  .wrapper {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-}
-
-.loginContainer {
+  }
+  
+  .loginContainer {
     padding: 20px;
     width: 80%;
     max-width: 500px;
-    border: 2px solid #dedede;
-    border-radius: 10px;
-    background-color: #fff;
+    border-radius: 5px;
+    background-color: #36393F;
     text-align: center;
-}
-
-form {
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
     margin-bottom: 20px;
     padding: 5px 10px;
-    border-radius: 6px;
-    border: none;
-    background-color: rgb(230, 236, 240);
+    border-radius: 5px;
+    border: solid black 0.2px;
+    background-color: #303339;
     color: rgb(101, 119, 134);
+  
     font-size: 16px;
     padding: 8px;
     padding-left: 8px;
-}
-
-
-input[type="submit"] {
-    background-color: #34495e;
+  }
+  
+  input[type="submit"] {
+    background-color: #ff5252;
     color: #fff;
     border: none;
-    border-radius: 7px;
+    border-radius: 5px;
     margin-bottom: 10px;
     padding: 6px;
-}
+  }
+  
