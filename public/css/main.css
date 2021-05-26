@@ -794,7 +794,7 @@ button span {
 }
 
 .senderName {
-    color: rgba(0,0,0,0.4);
+    color: grey;
 }
 
 .chatMessages .imageContainer {
