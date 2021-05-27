@@ -855,6 +855,14 @@ button span {
     visibility: visible;
 }
 
+.modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+    color: black;
+}
+
 #notificationList {
     position: fixed;
     top: 5px;
