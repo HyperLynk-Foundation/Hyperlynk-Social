@@ -168,8 +168,10 @@ button span {
     border: none;
     resize: none;
     font-size: 19px;
-    background-color: transparent;
+    background-color: #36393f;
     color: white;
+    border-radius: 15px;
+    padding: 5px;
 }
 
 #submitPostButton {
