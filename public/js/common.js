@@ -571,15 +571,15 @@ function outputPostsWithReplies(results, container) {
 }
 
 function outputUsers(results, container) {
-    container.html("");
+    //container.html("");
 
     results.forEach(result => {
         var html = createUserHtml(result, true);
         container.append(html);
     });
 
-    if(results.length == 0) {
-        container.append("<span class='noResults'>No results found</span>")
+    if (results.length == 0 && container.html() === "") {
+        container.append("<span class='noResults'>Nothing to show.</span>")
     }
 }
 
