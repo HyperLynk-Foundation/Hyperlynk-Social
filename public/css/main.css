@@ -836,7 +836,8 @@ button span {
 }
 
 .resultListItem.active {
-  border-left: solid 4px var(--blueBackground);
+  background-color: var(--blueBackground);
+
 }
 
 .resultListItem.notification * {
