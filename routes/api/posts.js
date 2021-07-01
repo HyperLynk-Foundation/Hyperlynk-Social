@@ -8,11 +8,44 @@ const Notification = require('../../schemas/NotificationSchema');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-router.get("/", async(req, res, next) => { 
-    const limit = parseInt(req.query.limit)
-    const skip = parseInt(req.query.skip)
-    const results = await getPosts({}, limit, skip)
-    res.status(200).send(results)
+router.get("/", async (req, res, next) => {
+
+    var searchObj = req.query;
+
+    if(searchObj.isReply !== undefined) {
+        var isReply = searchObj.isReply == "true";
+        searchObj.replyTo = { $exists: isReply };
+        delete searchObj.isReply;
+    }
+
+    if(searchObj.search !== undefined) {
+        searchObj.content = { $regex: searchObj.search, $options: "i" };
+        delete searchObj.search;
+    }
+
+    if(searchObj.followingOnly !== undefined) {
+        var followingOnly = searchObj.followingOnly == "true";
+
+        if(followingOnly) {
+            var objectIds = [];
+
+            if(!req.session.user.following) {
+                req.session.user.following = [];
+            }
+
+            req.session.user.following.forEach(user => {
+                objectIds.push(user);
+            })
+
+            objectIds.push(req.session.user._id);
+            searchObj.postedBy = { $in: objectIds };
+        }
+
+        delete searchObj.followingOnly;
+    }
+
+    var results = await getPosts(searchObj);
+    res.status(200).send(results);
 })
 
 router.get("/:id", async (req, res, next) => {
