@@ -2,7 +2,7 @@ body {
     background-color: #fff;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("https://th.bing.com/th/id/R591dd39a78dfd0c089c2140b300cf5d0?rik=SsX%2fqPUv%2bYfJ%2bg&pid=ImgRaw");
+    //background-image: url("https://th.bing.com/th/id/R591dd39a78dfd0c089c2140b300cf5d0?rik=SsX%2fqPUv%2bYfJ%2bg&pid=ImgRaw");//
     background-size: cover;
     background-attachment: fixed;
   }
@@ -18,8 +18,10 @@ body {
     width: 80%;
     max-width: 500px;
     border-radius: 5px;
-    background-color: #36393F;
+    background-color: #f8fcfc;
+
     text-align: center;
+    border: 0.1px solid #e1e6e6;
   }
   
   form {
@@ -32,10 +34,14 @@ body {
   input[type="password"] {
     margin-bottom: 20px;
     padding: 5px 10px;
-    border-radius: 5px;
-    border: solid black 0.2px;
-    background-color: #303339;
+    
     color: rgb(101, 119, 134);
+    border: 1px solid #ecf0f1;
+    //border-left: none;//
+    //border-right: none;//
+    //border-top: none;//
+    background-color: #fff;
+    border-radius: 8px;
   
     font-size: 16px;
     padding: 8px;
@@ -43,11 +49,10 @@ body {
   }
   
   input[type="submit"] {
-    background-color: #ff5252;
+    background-color: #26a35a;
     color: #fff;
     border: none;
     border-radius: 5px;
     margin-bottom: 10px;
     padding: 6px;
   }
-  
