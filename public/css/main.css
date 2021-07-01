@@ -626,10 +626,12 @@ button span {
 }
 
 .chatTitleBarContainer {
-  border-bottom: 1px solid var(--lightGrey);
-  display: flex;
-  align-items: center;
-  padding: var(--spacing);
+    display: flex;
+    align-items: center;
+    padding: var(--spacing);
+    background-color: #fff;
+    margin-top: 5px;
+    border-radius: 8px;
 }
 
 #chatName {
