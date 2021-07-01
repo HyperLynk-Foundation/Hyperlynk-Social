@@ -2,8 +2,15 @@ extends layouts/login-layout.pug
 
 block content
     .loginContainer
+      
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Source+Sans+Pro:wght@200&display=swap' rel='stylesheet')
        
-        img(src="https://i.ibb.co/GJ5cfnS/rfrffrds.png", alt="Hyperlynk Logo" width="460" style="margin-bottom: 10px; margin-top: 5px;")
+        img(src="https://i.ibb.co/KVChyhh/logonew.png", alt="Hyperlynk Logo" width="220" style="margin-bottom: 10px; margin-top: 5px;")
+        
+        h1(style="@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Source+Sans+Pro:wght@200&display=swap'); font-family: 'Roboto', sans-serif; font-family: 'Source Sans Pro', sans-serif;") Sign into Hyperlynk
+
      
 
      
@@ -23,5 +30,5 @@ block content
             input(type="text", name="logUsername", placeholder="Username or email", value="" required="")
             input(type="password", name="logPassword", placeholder="Password", value="" required="")
 
-            input(type="submit", value="Login")
+            input(type="submit", value="Sign in" style="font-weight: bold;")
         a(href="/register") Need an account? Register here.
