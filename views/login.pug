@@ -22,7 +22,7 @@ block content
   
         form(method="post")
 
-            p.errorMessage #{errorMessage}
+            p.errorMessage(style='background-color: red; color: white; border-radius: 6px; ') #{errorMessage}
 
             //- input(type="text", name="logUsername", placeholder="Username or email", value=logUsername required="")
             //- input(type="password", name="logPassword", placeholder="Password", required="")
