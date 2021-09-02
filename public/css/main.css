@@ -124,18 +124,19 @@ button span {
   flex: 1;
   font-size: 23px;
 }
-
+  
 .postFormContainer {
-  display: flex;
-  padding: var(--spacing);
-  border-bottom: 4px solid transparent;
-  flex-shrink: 0;
-  margin-top: 10px;
-
-  background-color: #fff;
-  margin-bottom: 10px;
-  border-radius: 9px;
+	display: flex;
+	padding: var(--spacing);
+	border-bottom: 4px solid transparent;
+	flex-shrink: 0;
+	margin-top: 10px;
+	/* background-color: #fff; */
+	margin-bottom: 10px;
+	border-radius: 7px;
+	border: 1px solid grey;
 }
+
 
 .modal .postFormContainer {
   border: none;
@@ -168,37 +169,44 @@ button span {
 }
 
 .textareaContainer textarea {
-  width: 100%;
-  border: none;
-  resize: none;
-  font-size: 19px;
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 5px;
+
+	width: 100%;
+	border: none;
+	resize: none;
+	font-size: 19px;
+	background-color: transparent;
+	border-radius: 15px;
+	padding: 5px;
+
 }
 
 #submitPostButton {
-  background-color: var(--blue);
+  background-color: black;
   color: white;
   border: none;
-  border-radius: 12px;
+  border-radius: 9px;
   padding: 7px 15px;
 }
 
 #submitPostButton:disabled {
-  background-color: var(--blueLight);
+  border: 1px solid gray;
+  color: gray;
+  background-color: transparent;
 }
 
 .post {
-  display: flex;
-  flex-direction: column;
-  padding: var(--spacing);
-  cursor: pointer;
-  border-bottom: 3px solid transparent;
-  flex-shrink: 0;
-  background-color: #fff;
-  margin-bottom: 10px;
-  border-radius: 9px;
+	display: flex;
+	flex-direction: column;
+	padding: var(--spacing);
+	cursor: pointer;
+	border-bottom: 3px solid transparent;
+	flex-shrink: 0;
+	/* background-color: #fff; */
+	margin-bottom: 10px;
+	/* border-radius: 9px; */
+	border-bottom: 1px solid gray;
+	/* border: solid; */
+
 }
 
 .mainContentContainer {
