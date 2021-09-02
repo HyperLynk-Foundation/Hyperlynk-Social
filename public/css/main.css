@@ -116,13 +116,13 @@ button span {
   align-items: center;
   border-bottom: 1px solid var(--lightGrey);
   flex-shrink: 0;
-  background-color: #fff;
   margin-top: 10px;
   border-radius: 9px;
 }
 
 .titleContainer h1 {
   flex: 1;
+  font-size: 23px;
 }
 
 .postFormContainer {
