@@ -429,12 +429,12 @@ button span {
 }
 
 .resultsContainer .user {
-  padding: var(--spacing);
-  display: flex;
-  /* border-bottom: 1px solid rgb(61, 65, 69); */
-  background-color: #fff;
-  margin-bottom: 6px;
-  border-radius: 9px;
+	padding: 9px;
+	display: flex;
+	border-bottom: 1px solid gray;
+	/* background-color: #fff; */
+	margin-bottom: 6px;
+	/* border-radius: 9px; */
 }
 
 .user .userDetailsContainer {
@@ -533,14 +533,15 @@ button span {
 }
 
 #userSearchTextbox {
-  border: none;
-  flex: 1;
-  font-weight: 200;
-  min-width: 350px;
-  background-color: white;
-  color: grey;
-  padding: 9px;
-  border-radius: 9px;
+	border: none;
+	flex: 1;
+	font-weight: 200;
+	min-width: 350px;
+	background-color: transparent;
+	/* color: grey; */
+	padding: 6px;
+	/* border-radius: 9px; */
+	border-bottom: 1px solid gray;
 }
 
 #createChatButton {
@@ -567,17 +568,19 @@ button span {
   display: inline-block;
 }
 
-.resultListItem {
-  padding: 7px;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  background-color: #fff;
-  margin-top: 5px;
-  border-radius: 8px;
+.resultListItem {	
+padding: 7px;
+display: flex;
+align-items: center;
+flex-shrink: 0;
+/* background-color: #fff; */
+/* margin-top: 5px; */
+/* border-radius: 8px; */
+border-bottom: 1px solid gray;
 }
 
 .resultListItem:hover {
+  background-color: #fff;
 }
 
 .resultsDetailsContainer {
