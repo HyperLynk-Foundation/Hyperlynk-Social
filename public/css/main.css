@@ -17,7 +17,7 @@ html,
 body {
   height: 100%;
   min-height: 100%;
-  background-color: #ecf0f1;
+  background-color: #fff;
   font-weight: 300;
   color: black;
 }
@@ -55,6 +55,7 @@ nav {
   padding-left: 10px;
   margin-right: 12px;
   border-bottom-right-radius: 10px;
+  border-right: 1px solid #ecf0f1;
 }
 
 nav a {
@@ -114,7 +115,6 @@ button span {
   padding: 0 var(--spacing);
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--lightGrey);
   flex-shrink: 0;
   margin-top: 10px;
   border-radius: 9px;
@@ -134,7 +134,7 @@ button span {
 	/* background-color: #fff; */
 	margin-bottom: 10px;
 	border-radius: 7px;
-	border: 1px solid grey;
+	border: 1px solid #ecf0f1;
 }
 
 
@@ -189,9 +189,9 @@ button span {
 }
 
 #submitPostButton:disabled {
-  border: 1px solid gray;
+  
   color: gray;
-  background-color: transparent;
+  background-color: #ecf0f1;
 }
 
 .post {
